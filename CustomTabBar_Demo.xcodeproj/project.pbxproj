@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		941407801EDE6EB800A98CBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9414077F1EDE6EB800A98CBF /* main.m */; };
 		941407831EDE6EB800A98CBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407821EDE6EB800A98CBF /* AppDelegate.m */; };
-		941407861EDE6EB800A98CBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407851EDE6EB800A98CBF /* ViewController.m */; };
 		941407891EDE6EB800A98CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941407871EDE6EB800A98CBF /* Main.storyboard */; };
 		9414078B1EDE6EB800A98CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9414078A1EDE6EB800A98CBF /* Assets.xcassets */; };
 		9414078E1EDE6EB800A98CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9414078C1EDE6EB800A98CBF /* LaunchScreen.storyboard */; };
 		941407991EDE6EB800A98CBF /* CustomTabBar_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407981EDE6EB800A98CBF /* CustomTabBar_DemoTests.m */; };
 		941407A41EDE6EB800A98CBF /* CustomTabBar_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407A31EDE6EB800A98CBF /* CustomTabBar_DemoUITests.m */; };
-		941407B31EDEAF1A00A98CBF /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407B21EDEAF1A00A98CBF /* CustomTabBarController.m */; };
-		941407B61EDEBC5900A98CBF /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407B51EDEBC5900A98CBF /* CustomTabBar.m */; };
-		941407B91EDEBE2400A98CBF /* UIView+HKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 941407B81EDEBE2400A98CBF /* UIView+HKExtension.m */; };
+		947377891EDECBD70017BF64 /* UIView+HKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 947377881EDECBD70017BF64 /* UIView+HKExtension.m */; };
+		947377901EDECBE00017BF64 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9473778B1EDECBE00017BF64 /* CustomTabBarController.m */; };
+		947377911EDECBE00017BF64 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9473778D1EDECBE00017BF64 /* HomeViewController.m */; };
+		947377921EDECBE00017BF64 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9473778F1EDECBE00017BF64 /* NewsViewController.m */; };
+		947377951EDECBE60017BF64 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 947377941EDECBE60017BF64 /* CustomTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,6 @@
 		9414077F1EDE6EB800A98CBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		941407811EDE6EB800A98CBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		941407821EDE6EB800A98CBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		941407841EDE6EB800A98CBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		941407851EDE6EB800A98CBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		941407881EDE6EB800A98CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9414078A1EDE6EB800A98CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9414078D1EDE6EB800A98CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,12 +53,17 @@
 		9414079F1EDE6EB800A98CBF /* CustomTabBar_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBar_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		941407A31EDE6EB800A98CBF /* CustomTabBar_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar_DemoUITests.m; sourceTree = "<group>"; };
 		941407A51EDE6EB800A98CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		941407B11EDEAF1A00A98CBF /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
-		941407B21EDEAF1A00A98CBF /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
-		941407B41EDEBC5900A98CBF /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
-		941407B51EDEBC5900A98CBF /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		941407B71EDEBE2400A98CBF /* UIView+HKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKExtension.h"; sourceTree = "<group>"; };
-		941407B81EDEBE2400A98CBF /* UIView+HKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKExtension.m"; sourceTree = "<group>"; };
+		947377871EDECBD70017BF64 /* UIView+HKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKExtension.h"; sourceTree = "<group>"; };
+		947377881EDECBD70017BF64 /* UIView+HKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKExtension.m"; sourceTree = "<group>"; };
+		9473778A1EDECBE00017BF64 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		9473778B1EDECBE00017BF64 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		9473778C1EDECBE00017BF64 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9473778D1EDECBE00017BF64 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9473778E1EDECBE00017BF64 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		9473778F1EDECBE00017BF64 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		947377931EDECBE60017BF64 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		947377941EDECBE60017BF64 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		947377961EDECF490017BF64 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +114,9 @@
 		9414077D1EDE6EB800A98CBF /* CustomTabBar_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				941407B71EDEBE2400A98CBF /* UIView+HKExtension.h */,
-				941407B81EDEBE2400A98CBF /* UIView+HKExtension.m */,
+				947377831EDECB600017BF64 /* Classes */,
 				941407811EDE6EB800A98CBF /* AppDelegate.h */,
 				941407821EDE6EB800A98CBF /* AppDelegate.m */,
-				941407841EDE6EB800A98CBF /* ViewController.h */,
-				941407851EDE6EB800A98CBF /* ViewController.m */,
-				941407B41EDEBC5900A98CBF /* CustomTabBar.h */,
-				941407B51EDEBC5900A98CBF /* CustomTabBar.m */,
-				941407B11EDEAF1A00A98CBF /* CustomTabBarController.h */,
-				941407B21EDEAF1A00A98CBF /* CustomTabBarController.m */,
 				941407871EDE6EB800A98CBF /* Main.storyboard */,
 				9414078A1EDE6EB800A98CBF /* Assets.xcassets */,
 				9414078C1EDE6EB800A98CBF /* LaunchScreen.storyboard */,
@@ -133,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9414077F1EDE6EB800A98CBF /* main.m */,
+				947377961EDECF490017BF64 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +151,47 @@
 				941407A51EDE6EB800A98CBF /* Info.plist */,
 			);
 			path = CustomTabBar_DemoUITests;
+			sourceTree = "<group>";
+		};
+		947377831EDECB600017BF64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				947377841EDECB7D0017BF64 /* category */,
+				947377851EDECB7D0017BF64 /* vc */,
+				947377861EDECB7D0017BF64 /* view */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		947377841EDECB7D0017BF64 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				947377871EDECBD70017BF64 /* UIView+HKExtension.h */,
+				947377881EDECBD70017BF64 /* UIView+HKExtension.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		947377851EDECB7D0017BF64 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				9473778A1EDECBE00017BF64 /* CustomTabBarController.h */,
+				9473778B1EDECBE00017BF64 /* CustomTabBarController.m */,
+				9473778C1EDECBE00017BF64 /* HomeViewController.h */,
+				9473778D1EDECBE00017BF64 /* HomeViewController.m */,
+				9473778E1EDECBE00017BF64 /* NewsViewController.h */,
+				9473778F1EDECBE00017BF64 /* NewsViewController.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		947377861EDECB7D0017BF64 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				947377931EDECBE60017BF64 /* CustomTabBar.h */,
+				947377941EDECBE60017BF64 /* CustomTabBar.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				941407861EDE6EB800A98CBF /* ViewController.m in Sources */,
+				947377951EDECBE60017BF64 /* CustomTabBar.m in Sources */,
 				941407831EDE6EB800A98CBF /* AppDelegate.m in Sources */,
-				941407B31EDEAF1A00A98CBF /* CustomTabBarController.m in Sources */,
-				941407B91EDEBE2400A98CBF /* UIView+HKExtension.m in Sources */,
-				941407B61EDEBC5900A98CBF /* CustomTabBar.m in Sources */,
 				941407801EDE6EB800A98CBF /* main.m in Sources */,
+				947377901EDECBE00017BF64 /* CustomTabBarController.m in Sources */,
+				947377891EDECBD70017BF64 /* UIView+HKExtension.m in Sources */,
+				947377911EDECBE00017BF64 /* HomeViewController.m in Sources */,
+				947377921EDECBE00017BF64 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +422,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/tangaofeng/Desktop/控件和资源库/我的项目/我的Demo/CustomTabBar_Demo/CustomTabBar_Demo/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -429,6 +471,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/tangaofeng/Desktop/控件和资源库/我的项目/我的Demo/CustomTabBar_Demo/CustomTabBar_Demo/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

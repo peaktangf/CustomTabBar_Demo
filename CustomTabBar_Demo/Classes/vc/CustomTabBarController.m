@@ -7,11 +7,9 @@
 //
 
 #import "CustomTabBarController.h"
+#import "HomeViewController.h"
+#import "NewsViewController.h"
 #import "CustomTabBar.h"
-
-#define kSCREEN_H [UIScreen mainScreen].bounds.size.height
-#define kSCREEN_W [UIScreen mainScreen].bounds.size.width
-#define IMG(imageName) [UIImage imageNamed:imageName]
 
 @interface CustomTabBarController ()<UITabBarControllerDelegate>
 
@@ -25,6 +23,7 @@
  该方式，按钮超出tabBar范围的部分不能相应点击
  - (void)viewDidLoad {
  [super viewDidLoad];
+ [self configureChildVC];
  self.delegate = self;
  //设置中间item的image样式，并设置其渲染模式为原始状态（不使用tint color）
  UITabBarItem *item = [self.tabBar.items objectAtIndex:1];
@@ -47,6 +46,7 @@
  
  该方式，按钮超出tabBar范围的部分不能相应点击
 - (void)viewDidLoad {
+    [self configureChildVC];
     UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 136, 53)];
     button.center = CGPointMake(kSCREEN_W/2, 22);
     [button setBackgroundImage:IMG(@"add_icon") forState:UIControlStateNormal];
@@ -60,19 +60,42 @@
 */
 
 
-
-/*
 // 3、Method three：自定义tabBar，以KVC的方式替换系统的tabBar
  
- 该方式，按钮超出tabBar范围的部分可以相应点击
+// 该方式，按钮超出tabBar范围的部分可以相应点击
 - (void)viewDidLoad {
+    [self configureChildVC];
     CustomTabBar *tabbar = [[CustomTabBar alloc] init];
+    [tabbar setCenterBtnSize:CGSizeMake(136, 53) center:CGPointMake(kSCREEN_W/2, 22) image:IMG(@"add_icon")];
     tabbar.centerClick = ^{
         NSLog(@"点击了");
     };
     [self setValue:tabbar forKey:@"tabBar"];
 }
- */
+ 
+
+#pragma mark - setup
+
+- (void)configureChildVC {
+    HomeViewController *homeVc = [[HomeViewController alloc] init];
+    [self setupOneChildVcWithVc:homeVc image:@"tabBar_home" selectedImage:@"tabBar_home" title:@"首页"];
+    UIViewController *centerVc = [[UIViewController alloc] init];
+    [self setupOneChildVcWithVc:centerVc image:nil selectedImage:nil title:@""];
+    NewsViewController *newsVc = [[NewsViewController alloc] init];
+    [self setupOneChildVcWithVc:newsVc image:@"tabBar_news" selectedImage:@"tabBar_news" title:@"新闻"];
+}
+
+- (void)setupOneChildVcWithVc:(UIViewController *)Vc image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title {
+    
+    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:Vc];
+    
+    Vc.tabBarItem.image = IMG(image);
+    Vc.tabBarItem.selectedImage = IMG(selectedImage);
+    Vc.tabBarItem.title = title;
+    Vc.title = title;
+    
+    [self addChildViewController:navVc];
+}
 
 
 - (void)didReceiveMemoryWarning {

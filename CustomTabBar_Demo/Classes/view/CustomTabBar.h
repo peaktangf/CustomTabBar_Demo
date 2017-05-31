@@ -11,5 +11,6 @@
 @interface CustomTabBar : UITabBar
 
 @property (nonatomic, copy) void(^centerClick)(void);
+- (void)setCenterBtnSize:(CGSize)size center:(CGPoint)center image:(UIImage *)image;
 
 @end
